@@ -8,7 +8,7 @@ const LandingLayout = () => {
       <div className="mt-8">
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

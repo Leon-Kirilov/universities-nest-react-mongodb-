@@ -9,7 +9,7 @@ import { join } from 'path/posix';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/unighana'),
+    MongooseModule.forRoot(process.env.DB_URI),
     UserModule,
     UniversityModule,
     ServeStaticModule.forRoot({
